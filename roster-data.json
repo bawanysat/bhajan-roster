@@ -465,7 +465,9 @@
       "id": 65,
       "name": "Meira",
       "lastSang": "2026-04-16",
-      "tags": [],
+      "tags": [
+        "child"
+      ],
       "notes": ""
     },
     {
