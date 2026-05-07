@@ -574,7 +574,9 @@
       "id": 78,
       "name": "Sai Mahesh",
       "lastSang": "2026-04-23",
-      "tags": [],
+      "tags": [
+        "child"
+      ],
       "notes": ""
     },
     {
