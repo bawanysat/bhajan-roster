@@ -500,7 +500,9 @@
       "id": 70,
       "name": "Vivaan",
       "lastSang": "2026-04-16",
-      "tags": [],
+      "tags": [
+        "child"
+      ],
       "notes": ""
     },
     {
