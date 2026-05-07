@@ -27,6 +27,608 @@
         "regular"
       ],
       "notes": ""
+    },
+    {
+      "id": 4,
+      "name": "Davina",
+      "lastSang": "2023-01-01",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 5,
+      "name": "Ritesh",
+      "lastSang": "2023-01-01",
+      "tags": [],
+      "notes": "Only for regional events"
+    },
+    {
+      "id": 6,
+      "name": "Aunty Hansa",
+      "lastSang": "2024-03-08",
+      "tags": [],
+      "notes": "Will let us know when available"
+    },
+    {
+      "id": 7,
+      "name": "Bhavik",
+      "lastSang": "2024-03-08",
+      "tags": [],
+      "notes": "Will let us know when available"
+    },
+    {
+      "id": 8,
+      "name": "Sabrina",
+      "lastSang": "2024-03-08",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 9,
+      "name": "Vinti",
+      "lastSang": "2024-03-08",
+      "tags": [],
+      "notes": "Would like to be back up - hasn't actually sung in 1.5 yrs at centre bhajans"
+    },
+    {
+      "id": 10,
+      "name": "Uncle Nagji",
+      "lastSang": "2024-03-21",
+      "tags": [],
+      "notes": "Will let us know when he is available"
+    },
+    {
+      "id": 11,
+      "name": "Rohini",
+      "lastSang": "2024-04-25",
+      "tags": [],
+      "notes": "Will let us know when she's free"
+    },
+    {
+      "id": 12,
+      "name": "Aunty Santhi",
+      "lastSang": "2024-08-08",
+      "tags": [],
+      "notes": "Rupini's Mum, only when in town"
+    },
+    {
+      "id": 13,
+      "name": "Payal",
+      "lastSang": "2024-11-14",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 14,
+      "name": "Anisha",
+      "lastSang": "2025-01-02",
+      "tags": [],
+      "notes": "Only in Uni holidays"
+    },
+    {
+      "id": 15,
+      "name": "Deep",
+      "lastSang": "2025-03-27",
+      "tags": [],
+      "notes": "Doesn't say yes, only wants Dev to sing"
+    },
+    {
+      "id": 16,
+      "name": "Darshana",
+      "lastSang": "2025-04-10",
+      "tags": [],
+      "notes": "Can't make it to bhajans anymore"
+    },
+    {
+      "id": 17,
+      "name": "Sohana",
+      "lastSang": "2025-08-21",
+      "tags": [],
+      "notes": "Cannot make it on time on Thursdays"
+    },
+    {
+      "id": 18,
+      "name": "Navina",
+      "lastSang": "2025-10-30",
+      "tags": [],
+      "notes": "Has baby now!"
+    },
+    {
+      "id": 19,
+      "name": "Aunty Asha",
+      "lastSang": "2025-11-27",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 20,
+      "name": "Vasanthy Aunty",
+      "lastSang": "2025-12-11",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 21,
+      "name": "Shivani",
+      "lastSang": "2025-12-18",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 22,
+      "name": "Tushar",
+      "lastSang": "2025-12-25",
+      "tags": [],
+      "notes": "Unavailable until march 2026"
+    },
+    {
+      "id": 23,
+      "name": "Aunty Ramila K",
+      "lastSang": "2026-01-01",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 24,
+      "name": "Saiesha",
+      "lastSang": "2026-01-01",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 25,
+      "name": "Yuke",
+      "lastSang": "2026-01-15",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 26,
+      "name": "Dhamish",
+      "lastSang": "2026-01-29",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 27,
+      "name": "Poorvashi",
+      "lastSang": "2026-02-05",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 28,
+      "name": "Prashanthi",
+      "lastSang": "2026-02-05",
+      "tags": [],
+      "notes": "(lives far, has to catch public transport to get to centre)"
+    },
+    {
+      "id": 29,
+      "name": "Uncle Rajagopal",
+      "lastSang": "2026-02-05",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 30,
+      "name": "Viraya",
+      "lastSang": "2026-03-05",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 31,
+      "name": "Ghajan",
+      "lastSang": "2026-03-12",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 32,
+      "name": "Radha",
+      "lastSang": "2026-03-12",
+      "tags": [],
+      "notes": "SSE regular"
+    },
+    {
+      "id": 33,
+      "name": "Uncle Venkat",
+      "lastSang": "2026-03-12",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 34,
+      "name": "Aunty Ramila Hari",
+      "lastSang": "2026-03-19",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 35,
+      "name": "Jiji",
+      "lastSang": "2026-03-19",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 36,
+      "name": "Prabhu",
+      "lastSang": "2026-03-19",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 37,
+      "name": "Sathyam",
+      "lastSang": "2026-03-19",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 38,
+      "name": "Uncle Ramesh Hari",
+      "lastSang": "2026-03-19",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 39,
+      "name": "Vivek",
+      "lastSang": "2026-03-19",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 40,
+      "name": "Ashvin",
+      "lastSang": "2026-03-26",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 41,
+      "name": "Ashwini",
+      "lastSang": "2026-03-26",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 42,
+      "name": "Dheavini",
+      "lastSang": "2026-03-26",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 43,
+      "name": "Disha",
+      "lastSang": "2026-03-26",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 44,
+      "name": "Raghav",
+      "lastSang": "2026-03-26",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 45,
+      "name": "Shiva K",
+      "lastSang": "2026-03-26",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 46,
+      "name": "Shivaranjani",
+      "lastSang": "2026-03-26",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 47,
+      "name": "Heta",
+      "lastSang": "2026-04-02",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 48,
+      "name": "Jai Shankar",
+      "lastSang": "2026-04-02",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 49,
+      "name": "Pramesh",
+      "lastSang": "2026-04-02",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 50,
+      "name": "Ramya Jai",
+      "lastSang": "2026-04-02",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 51,
+      "name": "Rupini",
+      "lastSang": "2026-04-02",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 52,
+      "name": "Uncle Gopakumar",
+      "lastSang": "2026-04-02",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 53,
+      "name": "Aunty Nisha",
+      "lastSang": "2026-04-09",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 54,
+      "name": "Aunty Ritu",
+      "lastSang": "2026-04-09",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 55,
+      "name": "Jiya",
+      "lastSang": "2026-04-09",
+      "tags": [],
+      "notes": "Only in holidays"
+    },
+    {
+      "id": 56,
+      "name": "Samarth",
+      "lastSang": "2026-04-09",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 57,
+      "name": "Saraswathi Sai",
+      "lastSang": "2026-04-09",
+      "tags": [],
+      "notes": "Able to sing in school holidays"
+    },
+    {
+      "id": 58,
+      "name": "Shyamala",
+      "lastSang": "2026-04-09",
+      "tags": [],
+      "notes": "Unable to sing during school term"
+    },
+    {
+      "id": 59,
+      "name": "Trisha",
+      "lastSang": "2026-04-09",
+      "tags": [],
+      "notes": "Only in holidays"
+    },
+    {
+      "id": 60,
+      "name": "Venkat Reddy",
+      "lastSang": "2026-04-09",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 61,
+      "name": "Venkat uncle",
+      "lastSang": "2026-04-09",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 62,
+      "name": "Dev",
+      "lastSang": "2026-04-16",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 63,
+      "name": "Manibal",
+      "lastSang": "2026-04-16",
+      "tags": [],
+      "notes": "SSE regular"
+    },
+    {
+      "id": 64,
+      "name": "Maniram",
+      "lastSang": "2026-04-16",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 65,
+      "name": "Meira",
+      "lastSang": "2026-04-16",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 66,
+      "name": "Sai Shravan",
+      "lastSang": "2026-04-16",
+      "tags": [],
+      "notes": "Likely not to sing weeknights"
+    },
+    {
+      "id": 67,
+      "name": "Sai Shyam",
+      "lastSang": "2026-04-16",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 68,
+      "name": "Sai Smaran",
+      "lastSang": "2026-04-16",
+      "tags": [],
+      "notes": "Likely not to sing during school weeknights"
+    },
+    {
+      "id": 69,
+      "name": "Satya",
+      "lastSang": "2026-04-16",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 70,
+      "name": "Vivaan",
+      "lastSang": "2026-04-16",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 71,
+      "name": "Aditya",
+      "lastSang": "2026-04-23",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 72,
+      "name": "Aunty Sumathi",
+      "lastSang": "2026-04-23",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 73,
+      "name": "Aunty Thilaka",
+      "lastSang": "2026-04-23",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 74,
+      "name": "Bawany",
+      "lastSang": "2026-04-23",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 75,
+      "name": "Dhruvi",
+      "lastSang": "2026-04-23",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 76,
+      "name": "Jessie",
+      "lastSang": "2026-04-23",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 77,
+      "name": "Kalendran",
+      "lastSang": "2026-04-23",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 78,
+      "name": "Sai Mahesh",
+      "lastSang": "2026-04-23",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 79,
+      "name": "Saiyuri",
+      "lastSang": "2026-04-23",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 80,
+      "name": "Aunty Nilima",
+      "lastSang": "2026-04-30",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 81,
+      "name": "Aunty Sujata",
+      "lastSang": "2026-04-30",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 82,
+      "name": "Aunty Yoga",
+      "lastSang": "2026-04-30",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 83,
+      "name": "Eshwar",
+      "lastSang": "2026-04-30",
+      "tags": [],
+      "notes": "SSE regular"
+    },
+    {
+      "id": 84,
+      "name": "Kawshal",
+      "lastSang": "2026-04-30",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 85,
+      "name": "Ayushi",
+      "lastSang": "2026-04-30",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 86,
+      "name": "Swapna",
+      "lastSang": "2026-04-30",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 87,
+      "name": "Uncle Pramesh",
+      "lastSang": "2026-04-30",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 88,
+      "name": "Sandhya",
+      "lastSang": "2026-05-07",
+      "tags": [],
+      "notes": ""
+    },
+    {
+      "id": 89,
+      "name": "Dhuva",
+      "lastSang": "2026-05-07",
+      "tags": [],
+      "notes": ""
     }
   ],
   "session": {
@@ -49,5 +651,5 @@
     ]
   },
   "groupName": "Woollongabba Sai Bhajan Roster",
-  "nextId": 4
+  "nextId": 90
 }
