@@ -419,7 +419,9 @@
       "id": 59,
       "name": "Trisha",
       "lastSang": "2026-04-09",
-      "tags": [],
+      "tags": [
+        "child"
+      ],
       "notes": "Only in holidays"
     },
     {
