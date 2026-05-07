@@ -1,9 +1,19 @@
 {
-  "singers": [],
+  "singers": [
+    {
+      "id": 1,
+      "name": "Sandhya Pavthrun",
+      "lastSang": "2026-05-07",
+      "tags": [
+        "special"
+      ],
+      "notes": ""
+    }
+  ],
   "session": {
     "date": "2026-05-07",
     "entries": []
   },
   "groupName": "Woollongabba Sai Bhajan Roster",
-  "nextId": 1
+  "nextId": 2
 }
