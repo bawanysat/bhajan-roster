@@ -611,7 +611,9 @@
       "id": 83,
       "name": "Eshwar",
       "lastSang": "2026-04-30",
-      "tags": [],
+      "tags": [
+        "child"
+      ],
       "notes": "SSE regular"
     },
     {
