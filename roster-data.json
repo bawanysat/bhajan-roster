@@ -9,6 +9,15 @@
         "special"
       ],
       "notes": ""
+    },
+    {
+      "id": 2,
+      "name": "Dhruva",
+      "lastSang": "2026-05-07",
+      "tags": [
+        "special"
+      ],
+      "notes": ""
     }
   ],
   "session": {
@@ -16,5 +25,5 @@
     "entries": []
   },
   "groupName": "Woollongabba Sai Bhajan Roster",
-  "nextId": 2
+  "nextId": 3
 }
