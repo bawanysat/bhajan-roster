@@ -449,9 +449,11 @@
     },
     {
       "id": 63,
-      "name": "Manibal",
+      "name": "Manibalaji",
       "lastSang": "2026-04-16",
-      "tags": [],
+      "tags": [
+        "child"
+      ],
       "notes": "SSE regular"
     },
     {
