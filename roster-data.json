@@ -493,7 +493,9 @@
       "id": 69,
       "name": "Satya",
       "lastSang": "2026-04-16",
-      "tags": [],
+      "tags": [
+        "child"
+      ],
       "notes": ""
     },
     {
