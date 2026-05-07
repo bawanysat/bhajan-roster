@@ -18,6 +18,15 @@
         "special"
       ],
       "notes": ""
+    },
+    {
+      "id": 3,
+      "name": "Praneil Raniga",
+      "lastSang": null,
+      "tags": [
+        "regular"
+      ],
+      "notes": ""
     }
   ],
   "session": {
@@ -25,5 +34,5 @@
     "entries": []
   },
   "groupName": "Woollongabba Sai Bhajan Roster",
-  "nextId": 3
+  "nextId": 4
 }
