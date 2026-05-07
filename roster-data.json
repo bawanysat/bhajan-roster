@@ -444,7 +444,9 @@
       "id": 62,
       "name": "Dev",
       "lastSang": "2026-04-16",
-      "tags": [],
+      "tags": [
+        "child"
+      ],
       "notes": ""
     },
     {
