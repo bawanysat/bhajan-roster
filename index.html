@@ -71,7 +71,7 @@ h1 { font-size:20px; font-weight:600; }
 .btn-danger:hover  { background:var(--red-bg); }
 .btn-success { color:var(--green); border-color:var(--green-bd); }
 .btn-success:hover { background:var(--green-bg); }
-.btn-full { width:100%; justify-content:center; padding:10px; }
+.btn-full { width:100%; justify-content:center; padding:12px; font-size:14px; }
 input[type=text],input[type=date],input[type=password],input[type=url],textarea,select {
   font-size:14px; padding:8px 10px; border:0.5px solid var(--border2); border-radius:var(--radius-sm);
   background:var(--bg); color:var(--text); width:100%; font-family:inherit;
@@ -96,6 +96,11 @@ textarea { resize:vertical; }
 .tags-check label { display:inline-flex; align-items:center; font-size:13px; cursor:pointer; padding:5px 10px; border-radius:20px; border:0.5px solid var(--border2); gap:5px; }
 .toast { position:fixed; bottom:20px; left:50%; transform:translateX(-50%); background:var(--text); color:var(--bg); padding:10px 20px; border-radius:20px; font-size:13px; opacity:0; transition:opacity .3s; pointer-events:none; z-index:99; white-space:nowrap; }
 .toast.show { opacity:1; }
+.spinner { display:inline-block; width:12px; height:12px; border:2px solid currentColor; border-top-color:transparent; border-radius:50%; animation:spin .6s linear infinite; }
+@keyframes spin { to { transform:rotate(360deg); } }
+.info-box  { background:var(--blue-bg);  border-radius:var(--radius-sm); padding:10px 14px; font-size:13px; color:var(--blue);  margin-bottom:12px; line-height:1.5; }
+.warn-box  { background:var(--amber-bg); border-radius:var(--radius-sm); padding:10px 14px; font-size:13px; color:var(--amber); margin-bottom:12px; line-height:1.5; }
+.green-box { background:var(--green-bg); border-radius:var(--radius-sm); padding:10px 14px; font-size:13px; color:var(--green); margin-bottom:12px; line-height:1.5; }
 /* Setup */
 .setup-step { background:var(--bg2); border-radius:var(--radius); padding:1rem 1.25rem; margin-bottom:12px; }
 .setup-num   { display:inline-flex; align-items:center; justify-content:center; width:22px; height:22px; border-radius:50%; background:var(--text); color:var(--bg); font-size:12px; font-weight:700; margin-right:8px; flex-shrink:0; }
@@ -103,11 +108,18 @@ textarea { resize:vertical; }
 .setup-step p { font-size:13px; color:var(--text2); line-height:1.6; margin-bottom:6px; }
 .setup-step code { font-family:monospace; background:var(--bg3); padding:2px 6px; border-radius:4px; font-size:12px; }
 .setup-step a { color:var(--blue); }
-.info-box  { background:var(--blue-bg);  border-radius:var(--radius-sm); padding:10px 14px; font-size:13px; color:var(--blue);  margin-bottom:12px; line-height:1.5; }
-.warn-box  { background:var(--amber-bg); border-radius:var(--radius-sm); padding:10px 14px; font-size:13px; color:var(--amber); margin-bottom:12px; line-height:1.5; }
-.green-box { background:var(--green-bg); border-radius:var(--radius-sm); padding:10px 14px; font-size:13px; color:var(--green); margin-bottom:12px; line-height:1.5; }
-.spinner { display:inline-block; width:12px; height:12px; border:2px solid currentColor; border-top-color:transparent; border-radius:50%; animation:spin .6s linear infinite; }
-@keyframes spin { to { transform:rotate(360deg); } }
+/* Join screen */
+.join-wrap { max-width:400px; margin:4rem auto 0; text-align:center; }
+.join-logo { font-size:56px; margin-bottom:1rem; }
+.join-title { font-size:22px; font-weight:700; margin-bottom:6px; }
+.join-subtitle { font-size:14px; color:var(--text2); margin-bottom:2rem; line-height:1.5; }
+.join-card { background:var(--bg2); border-radius:var(--radius); padding:1.5rem; text-align:left; margin-bottom:1rem; }
+.join-card .field label { font-size:13px; }
+.join-token-input { font-size:16px; padding:12px 14px; letter-spacing:.04em; }
+.join-help { font-size:12px; color:var(--text3); line-height:1.6; margin-top:1.5rem; }
+.join-divider { display:flex; align-items:center; gap:10px; margin:1.5rem 0; }
+.join-divider span { font-size:12px; color:var(--text3); white-space:nowrap; }
+.join-divider::before,.join-divider::after { content:''; flex:1; height:0.5px; background:var(--border2); }
 /* Programme table */
 .prog-wrap { overflow-x:auto; }
 .prog-table { width:100%; border-collapse:collapse; font-size:13px; }
@@ -115,14 +127,7 @@ textarea { resize:vertical; }
 .prog-table td { padding:10px 8px; vertical-align:top; border-bottom:0.5px solid var(--border); }
 .prog-table tr:last-child td { border-bottom:none; }
 .prog-table tbody tr:hover td { background:var(--bg2); }
-.col-num    { width:32px; }
-.col-singer { min-width:120px; }
-.col-bhajan { min-width:130px; }
-.col-links  { min-width:180px; }
-.col-actions{ width:70px; text-align:right; }
-.prog-num   { font-size:13px; font-weight:600; color:var(--text2); }
 .prog-name  { font-weight:500; font-size:14px; }
-.prog-bhajan-text { color:var(--text); font-size:13px; }
 .prog-links-wrap { display:flex; flex-wrap:wrap; gap:5px; align-items:center; }
 .pill { display:inline-flex; align-items:center; gap:4px; font-size:11px; padding:3px 9px; border-radius:20px; text-decoration:none; white-space:nowrap; font-family:inherit; cursor:pointer; }
 .pill-blue  { background:var(--blue-bg);  color:var(--blue);  border:0.5px solid var(--blue-bd); }
@@ -132,23 +137,19 @@ textarea { resize:vertical; }
 .lyrics-block { margin-top:8px; font-size:12px; color:var(--text2); white-space:pre-wrap; background:var(--bg2); border-radius:var(--radius-sm); padding:10px 12px; line-height:1.75; max-height:180px; overflow-y:auto; border:0.5px solid var(--border); }
 .sug-card { background:var(--bg); border:0.5px solid var(--border); border-radius:var(--radius); padding:10px 1rem; margin-bottom:8px; display:flex; align-items:flex-start; gap:10px; }
 /* CSV Import */
-.drop-zone { border:2px dashed var(--border2); border-radius:var(--radius); padding:2rem 1rem; text-align:center; cursor:pointer; transition:border-color .2s, background .2s; }
-.drop-zone:hover, .drop-zone.over { border-color:var(--blue); background:var(--blue-bg); }
+.drop-zone { border:2px dashed var(--border2); border-radius:var(--radius); padding:2rem 1rem; text-align:center; cursor:pointer; transition:border-color .2s,background .2s; }
+.drop-zone:hover,.drop-zone.over { border-color:var(--blue); background:var(--blue-bg); }
 .drop-zone input { display:none; }
-.drop-zone-icon { font-size:32px; margin-bottom:8px; }
-.drop-zone-label { font-size:14px; font-weight:500; color:var(--text2); }
-.drop-zone-hint  { font-size:12px; color:var(--text3); margin-top:4px; }
 .map-table { width:100%; border-collapse:collapse; font-size:13px; margin-bottom:1rem; }
 .map-table th { text-align:left; font-size:11px; font-weight:600; color:var(--text2); text-transform:uppercase; letter-spacing:.06em; padding:0 8px 8px; border-bottom:0.5px solid var(--border2); }
 .map-table td { padding:8px 8px; border-bottom:0.5px solid var(--border); vertical-align:middle; }
 .map-table tr:last-child td { border-bottom:none; }
-.map-table select { padding:5px 8px; font-size:13px; }
 .preview-table { width:100%; border-collapse:collapse; font-size:12px; margin-bottom:1rem; max-height:200px; overflow-y:auto; display:block; }
 .preview-table th { text-align:left; font-size:11px; font-weight:600; color:var(--text2); padding:4px 8px; background:var(--bg2); border-bottom:0.5px solid var(--border2); position:sticky; top:0; }
 .preview-table td { padding:5px 8px; border-bottom:0.5px solid var(--border); color:var(--text2); }
-.step-indicator { display:flex; gap:0; margin-bottom:1.5rem; }
+.step-indicator { display:flex; margin-bottom:1.5rem; }
 .step-dot { flex:1; text-align:center; font-size:11px; font-weight:600; padding:6px 4px; border-bottom:2px solid var(--border); color:var(--text3); }
-.step-dot.active { color:var(--blue); border-color:var(--blue); }
+.step-dot.active { color:var(--blue);  border-color:var(--blue); }
 .step-dot.done   { color:var(--green); border-color:var(--green); }
 </style>
 </head>
@@ -215,6 +216,7 @@ textarea { resize:vertical; }
 <div class="toast" id="toast"></div>
 
 <script>
+// ── CONSTANTS ─────────────────────────────────────────────────────────────────
 const CFG_KEY  = 'bhajan_gh_config';
 const DATA_KEY = 'bhajan_roster_v3';
 const SAI_BASE = 'https://sairhythms.sathyasai.org/songs?title=';
@@ -226,18 +228,17 @@ const ALL_TAGS = [
   {key:'senior',     label:'Senior',             cls:'tag-senior'},
   {key:'unavailable',label:'Unavailable',        cls:'tag-unavailable'},
 ];
-// App fields that CSV columns can be mapped to
 const APP_FIELDS = [
-  {key:'name',     label:'Singer name',      required:true},
-  {key:'lastSang', label:'Last sang date',   required:false},
-  {key:'notes',    label:'Notes / comments', required:false},
-  {key:'_ignore',  label:'— Ignore this column —', required:false},
+  {key:'name',    label:'Singer name',         required:true},
+  {key:'lastSang',label:'Last sang date',      required:false},
+  {key:'notes',   label:'Notes / comments',    required:false},
+  {key:'_ignore', label:'— Ignore this column —', required:false},
 ];
 
+// ── STATE ─────────────────────────────────────────────────────────────────────
 let cfg=null, state=null, fileSha=null;
 let activeFilter=null, editSingerId=null, editEntryIdx=null;
 let currentTab='roster', syncTimer=null;
-// CSV import state
 let csvHeaders=[], csvRows=[], csvMapping={};
 
 const $   = id => document.getElementById(id);
@@ -248,7 +249,7 @@ function initials(n){ return n.split(' ').map(w=>w[0]).join('').slice(0,2).toUpp
 function toast(msg,dur=2500){ const el=$('toast');el.textContent=msg;el.classList.add('show');setTimeout(()=>el.classList.remove('show'),dur); }
 function setSyncStatus(st,label){ const el=$('sync-pill');if(!el)return;el.className='sync-pill '+st;const icon=st==='busy'?'<span class="spinner"></span>':st==='ok'?'☁️':'⚠️';el.innerHTML=`${icon} ${label}`; }
 
-// ── GITHUB ────────────────────────────────────────────────────────────────────
+// ── GITHUB API ────────────────────────────────────────────────────────────────
 async function ghFetch(path,method='GET',body=null){
   const res=await fetch('https://api.github.com'+path,{method,headers:{'Authorization':'token '+cfg.token,'Accept':'application/vnd.github.v3+json','Content-Type':'application/json'},...(body?{body:JSON.stringify(body)}:{})});
   if(!res.ok){const e=await res.json().catch(()=>({}));throw new Error(e.message||res.statusText);}
@@ -279,45 +280,153 @@ async function saveToGitHub(msg){
   }catch(e){setSyncStatus('err','Save failed');toast('⚠️ '+e.message,4000);return false;}
 }
 function scheduleSave(msg){clearTimeout(syncTimer);setSyncStatus('busy','Saving…');syncTimer=setTimeout(()=>saveToGitHub(msg||'Update roster'),1500);}
-
 function saveLocal(){try{localStorage.setItem(DATA_KEY,JSON.stringify({state,fileSha}));}catch(e){}}
 function loadLocal(){try{const r=localStorage.getItem(DATA_KEY);if(r){const p=JSON.parse(r);state=p.state;fileSha=p.fileSha;return true;}}catch(e){}return false;}
 function loadCfg(){try{const r=localStorage.getItem(CFG_KEY);return r?JSON.parse(r):null;}catch(e){return null;}}
 function saveCfg(c){try{localStorage.setItem(CFG_KEY,JSON.stringify(c));}catch(e){}}
-function defaultState(){ return{singers:[],session:{date:new Date().toISOString().split('T')[0],entries:[]},groupName:'Bhajan Kirtan Group',nextId:1}; }
+function defaultState(){return{singers:[],session:{date:new Date().toISOString().split('T')[0],entries:[]},groupName:'Bhajan Kirtan Group',nextId:1};}
 
-// ── SETUP ─────────────────────────────────────────────────────────────────────
+// ── JOIN SCREEN (for committee members) ───────────────────────────────────────
+function renderJoin(errMsg){
+  $('shell').innerHTML=`
+    <div class="join-wrap">
+      <div class="join-logo">🎵</div>
+      <div class="join-title">Bhajan Kirtan Roster</div>
+      <div class="join-subtitle">Enter the access code shared with you by your committee organiser to get started.</div>
+
+      ${errMsg?`<div class="warn-box" style="text-align:left;">⚠️ ${esc(errMsg)}</div>`:''}
+
+      <div class="join-card">
+        <div class="field">
+          <label>Access code</label>
+          <input class="join-token-input" type="password" id="join-token" placeholder="Paste your access code here" />
+          <div class="hint" style="margin-top:6px;">This was shared with you privately via WhatsApp or message. It looks like: <code>ghp_xxxxxxxxxxxx</code></div>
+        </div>
+        <button class="btn btn-primary btn-full" onclick="joinWithToken()" id="join-btn">Join →</button>
+      </div>
+
+      <div class="join-help">
+        🔒 Your access code is stored only on this device and is never shared with anyone.<br><br>
+        Are you the <strong>organiser</strong> setting this up for the first time?
+        <button class="btn btn-sm" style="margin-top:8px;width:100%;justify-content:center;" onclick="renderSetup()">Admin setup →</button>
+      </div>
+    </div>
+  `;
+  // Allow pressing Enter to submit
+  setTimeout(()=>{ const el=$('join-token'); if(el) el.addEventListener('keydown',e=>{if(e.key==='Enter')joinWithToken();}); },0);
+}
+
+async function joinWithToken(){
+  const token=($('join-token').value||'').trim();
+  if(!token){toast('Please paste your access code first');return;}
+  const btn=$('join-btn');btn.innerHTML='<span class="spinner"></span> Checking…';btn.disabled=true;
+
+  // We need the repo details — they are baked into the app by the admin.
+  // If REPO_OWNER and REPO_NAME are set (replaced at deploy time), use them.
+  // Otherwise ask the user (fallback for local testing).
+  const owner = window.BHAJAN_OWNER || null;
+  const repo  = window.BHAJAN_REPO  || null;
+  const filePath = window.BHAJAN_FILE || 'roster-data.json';
+
+  if(!owner||!repo){
+    // Fallback: show mini form asking for repo details
+    btn.innerHTML='Join →';btn.disabled=false;
+    renderJoinFull(errMsg='');
+    return;
+  }
+
+  cfg={owner,repo,token,filePath};
+  try{
+    await ghFetch(`/repos/${owner}/${repo}`);
+    saveCfg(cfg);state=defaultState();await loadFromGitHub();renderApp();
+  }catch(e){
+    btn.innerHTML='Join →';btn.disabled=false;
+    renderJoin('Invalid access code. Please check and try again.');
+  }
+}
+
+// Fallback join form that also asks for repo details (used when not yet deployed / OWNER not set)
+function renderJoinFull(errMsg){
+  $('shell').innerHTML=`
+    <div class="join-wrap" style="max-width:440px;">
+      <div class="join-logo">🎵</div>
+      <div class="join-title">Bhajan Kirtan Roster</div>
+      <div class="join-subtitle">Enter the details shared by your organiser.</div>
+      ${errMsg?`<div class="warn-box" style="text-align:left;">⚠️ ${esc(errMsg)}</div>`:''}
+      <div class="join-card">
+        <div class="field"><label>GitHub username of organiser</label><input type="text" id="jf-owner" placeholder="e.g. john-smith" /></div>
+        <div class="field"><label>Repository name</label><input type="text" id="jf-repo" placeholder="e.g. bhajan-roster" /></div>
+        <div class="field">
+          <label>Access code</label>
+          <input class="join-token-input" type="password" id="jf-token" placeholder="ghp_xxxxxxxxxxxx" />
+        </div>
+        <button class="btn btn-primary btn-full" onclick="joinFull()" id="jf-btn">Join →</button>
+      </div>
+      <div class="join-help">
+        Are you the <strong>organiser</strong>?
+        <button class="btn btn-sm" style="margin-top:8px;width:100%;justify-content:center;" onclick="renderSetup()">Admin setup →</button>
+      </div>
+    </div>
+  `;
+}
+async function joinFull(){
+  const owner=($('jf-owner').value||'').trim(),repo=($('jf-repo').value||'').trim(),token=($('jf-token').value||'').trim();
+  const filePath='roster-data.json';
+  if(!owner||!repo||!token){toast('Please fill in all fields');return;}
+  const btn=$('jf-btn');btn.innerHTML='<span class="spinner"></span> Checking…';btn.disabled=true;
+  cfg={owner,repo,token,filePath};
+  try{
+    await ghFetch(`/repos/${owner}/${repo}`);
+    saveCfg(cfg);state=defaultState();await loadFromGitHub();renderApp();
+  }catch(e){
+    btn.innerHTML='Join →';btn.disabled=false;
+    renderJoinFull('Could not connect: '+e.message+'. Check the details and try again.');
+  }
+}
+
+// ── ADMIN SETUP SCREEN ────────────────────────────────────────────────────────
 function renderSetup(errMsg){
   $('shell').innerHTML=`
-    <h1>🎵 Bhajan Kirtan Roster</h1>
-    <p class="subtitle" style="margin-bottom:1.5rem;">One-time GitHub setup</p>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:1.5rem;">
+      <button class="btn btn-sm" onclick="renderJoin('')">← Back</button>
+      <div><h1>🎵 Admin setup</h1><div class="subtitle">One-time setup for the organiser</div></div>
+    </div>
     ${errMsg?`<div class="warn-box">⚠️ ${esc(errMsg)}</div>`:''}
-    <div class="info-box">ℹ️ Your data is stored as a JSON file in your GitHub repository. Every save is version-controlled — full history of all changes.</div>
+    <div class="info-box">ℹ️ Complete this once. After setup, share the app URL and your access token with committee members — they just paste the token to join.</div>
+
     <div class="setup-step">
       <div class="setup-title"><span class="setup-num">1</span>Create a GitHub repository</div>
       <p>Go to <a href="https://github.com/new" target="_blank">github.com/new</a>. Name it <code>bhajan-roster</code>. Set it to <strong>Public</strong>. Tick <em>"Add a README file"</em> then click Create.</p>
     </div>
     <div class="setup-step">
       <div class="setup-title"><span class="setup-num">2</span>Enable GitHub Pages</div>
-      <p>In the repo go to <strong>Settings → Pages</strong>. Under Source select <strong>Deploy from a branch</strong>, choose <strong>main</strong> and <strong>/ (root)</strong>. Click Save. Your URL will be <code>https://YOUR-USERNAME.github.io/bhajan-roster/</code></p>
+      <p>In the repo go to <strong>Settings → Pages</strong>. Under Source select <strong>Deploy from a branch</strong>, choose <strong>main</strong> and <strong>/ (root)</strong>. Click Save.</p>
+      <p>Your app URL will be: <code>https://YOUR-USERNAME.github.io/bhajan-roster/</code></p>
     </div>
     <div class="setup-step">
       <div class="setup-title"><span class="setup-num">3</span>Upload this HTML file</div>
-      <p>In the repo click <strong>Add file → Upload files</strong>. Upload this file renamed as <code>index.html</code>.</p>
+      <p>In the repo click <strong>Add file → Upload files</strong>. Upload this file <strong>renamed as <code>index.html</code></strong>.</p>
     </div>
     <div class="setup-step">
       <div class="setup-title"><span class="setup-num">4</span>Create a Personal Access Token</div>
-      <p>Go to <a href="https://github.com/settings/tokens/new" target="_blank">github.com/settings/tokens/new</a>. Name it <code>bhajan-roster</code>. Set expiry to <strong>No expiration</strong>. Tick <strong>repo</strong> scope. Click Generate and <strong>copy the token immediately</strong>.</p>
+      <p>Go to <a href="https://github.com/settings/tokens/new" target="_blank">github.com/settings/tokens/new</a>. Name it <code>bhajan-roster</code>. Set expiry to <strong>No expiration</strong>. Tick the <strong>repo</strong> checkbox. Click Generate and <strong>copy the token immediately</strong>.</p>
     </div>
+    <div class="setup-step">
+      <div class="setup-title"><span class="setup-num">5</span>Share with committee members</div>
+      <p>Send your committee members:</p>
+      <p>1. The app URL: <code>https://YOUR-USERNAME.github.io/bhajan-roster/</code></p>
+      <p>2. The access token (privately via WhatsApp). They paste it once and they're in.</p>
+    </div>
+
     <div class="card" style="margin-bottom:1rem;">
-      <div style="font-size:16px;font-weight:600;margin-bottom:1rem;">Enter your details</div>
+      <div style="font-size:16px;font-weight:600;margin-bottom:1rem;">Connect your GitHub repository</div>
       <div class="field"><label>GitHub username</label><input type="text" id="cfg-owner" placeholder="e.g. john-smith" /></div>
       <div class="field"><label>Repository name</label><input type="text" id="cfg-repo" placeholder="e.g. bhajan-roster" /></div>
       <div class="field"><label>Personal Access Token</label><input type="password" id="cfg-token" placeholder="ghp_xxxxxxxxxxxx" /></div>
       <div class="field"><label>Data filename</label><input type="text" id="cfg-path" value="roster-data.json" /></div>
-      <button class="btn btn-primary btn-full" onclick="connectGH()" id="connect-btn">Connect to GitHub →</button>
+      <button class="btn btn-primary btn-full" onclick="connectGH()" id="connect-btn">Connect &amp; continue →</button>
     </div>
-    <p style="font-size:12px;color:var(--text3);text-align:center;line-height:1.5;">Your token is stored only in your browser's local storage and sent exclusively to the GitHub API over HTTPS.</p>
+    <p style="font-size:12px;color:var(--text3);text-align:center;line-height:1.5;">Your token is stored only in your browser's local storage and is sent exclusively to the GitHub API over HTTPS.</p>
   `;
 }
 async function connectGH(){
@@ -325,11 +434,13 @@ async function connectGH(){
   if(!owner||!repo||!token){toast('Please fill in all fields');return;}
   const btn=$('connect-btn');btn.innerHTML='<span class="spinner"></span> Connecting…';btn.disabled=true;
   cfg={owner,repo,token,filePath};
-  try{await ghFetch(`/repos/${owner}/${repo}`);saveCfg(cfg);state=defaultState();await loadFromGitHub();renderApp();}
-  catch(e){btn.innerHTML='Connect to GitHub →';btn.disabled=false;renderSetup('Could not connect: '+e.message);}
+  try{
+    await ghFetch(`/repos/${owner}/${repo}`);
+    saveCfg(cfg);state=defaultState();await loadFromGitHub();renderApp();
+  }catch(e){btn.innerHTML='Connect &amp; continue →';btn.disabled=false;renderSetup('Could not connect: '+e.message);}
 }
 
-// ── APP SHELL ─────────────────────────────────────────────────────────────────
+// ── MAIN APP ──────────────────────────────────────────────────────────────────
 function renderApp(){
   $('shell').innerHTML=`
     <div class="top-bar">
@@ -344,7 +455,6 @@ function renderApp(){
       <button class="tab" onclick="showTab('session',this)">📅 Session</button>
       <button class="tab" onclick="showTab('whatsapp',this)">💬 WhatsApp</button>
     </div>
-    <!-- ROSTER -->
     <div id="tab-roster" class="section active">
       <div class="stat-grid" id="stats"></div>
       <div class="sec-hdr">
@@ -357,7 +467,6 @@ function renderApp(){
       <div class="filter-row" id="filter-row"></div>
       <div id="singer-list"></div>
     </div>
-    <!-- SESSION -->
     <div id="tab-session" class="section">
       <div class="card" style="margin-bottom:1rem;">
         <div class="sec-title" style="margin-bottom:8px;">Session date</div>
@@ -377,7 +486,6 @@ function renderApp(){
         <button class="btn btn-danger"  onclick="clearSession()">✕ Clear session</button>
       </div>
     </div>
-    <!-- WHATSAPP -->
     <div id="tab-whatsapp" class="section">
       <div class="sec-title">Message preview</div>
       <div class="wa-box" id="wa-preview"></div>
@@ -407,7 +515,7 @@ function showTab(name,el){
 async function manualSync(){
   await loadFromGitHub();
   if(currentTab==='roster')renderRoster();if(currentTab==='session')renderSession();if(currentTab==='whatsapp')refreshWA();
-  toast('Synced with GitHub ✓');
+  toast('Synced ✓');
 }
 function showSettings(){
   const m=document.createElement('div');m.className='modal-bg open';m.id='settings-modal';
@@ -415,16 +523,23 @@ function showSettings(){
     <div class="modal-title">⚙️ Settings</div>
     <div class="info-box">Connected: <strong>${esc(cfg.owner)}/${esc(cfg.repo)}</strong><br>Data file: <strong>${esc(cfg.filePath)}</strong></div>
     <div class="field"><label>Group name</label><input type="text" id="s-group" value="${esc(state.groupName||'')}" /></div>
+    <div class="field"><label>Share with committee members</label>
+      <div class="info-box" style="margin-bottom:0;word-break:break-all;">
+        <strong>App URL:</strong> ${esc(window.location.href.split('?')[0])}<br><br>
+        <strong>Access code:</strong> ${esc(cfg.token)}<br><br>
+        <span style="font-size:11px;">Send both to committee members privately via WhatsApp. They paste the access code once on their device.</span>
+      </div>
+    </div>
     <div class="field"><label>Export data</label><button class="btn btn-full" onclick="exportJSON()">⬇ Download roster-data.json</button></div>
     <div class="divider"></div>
-    <button class="btn btn-danger btn-full" onclick="disconnect()">Disconnect &amp; reconfigure</button>
+    <button class="btn btn-danger btn-full" onclick="disconnect()">Disconnect (sign out of this device)</button>
     <div style="display:flex;justify-content:flex-end;margin-top:1rem;"><button class="btn btn-primary" onclick="closeSettings()">Done</button></div>
   </div>`;
   document.body.appendChild(m);m.addEventListener('click',e=>{if(e.target===m)closeSettings();});
 }
 function closeSettings(){const m=$('settings-modal');if(!m)return;const g=$('s-group');if(g){state.groupName=g.value.trim();scheduleSave('Update group name');}m.remove();}
 function exportJSON(){const b=new Blob([JSON.stringify(state,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='roster-data.json';a.click();}
-function disconnect(){if(!confirm('Disconnect? Data stays safe in GitHub.'))return;localStorage.removeItem(CFG_KEY);localStorage.removeItem(DATA_KEY);location.reload();}
+function disconnect(){if(!confirm('Sign out of this device? Your data stays safe in GitHub.'))return;localStorage.removeItem(CFG_KEY);localStorage.removeItem(DATA_KEY);location.reload();}
 
 // ── ROSTER ────────────────────────────────────────────────────────────────────
 function tagHtml(tags,small=false){
@@ -452,8 +567,7 @@ function renderRoster(){
   const list=$('singer-list');if(!list)return;
   if(!singers.length){list.innerHTML='<div class="empty">No singers yet. Add one or import from CSV.</div>';return;}
   list.innerHTML=singers.map(s=>{
-    const days=daysSince(s.lastSang);
-    const isUnavail=s.tags&&s.tags.includes('unavailable');
+    const days=daysSince(s.lastSang);const isUnavail=s.tags&&s.tags.includes('unavailable');
     const badge=isUnavail?'<span class="badge" style="background:var(--red-bg);color:var(--red);">Unavailable</span>':
       !s.lastSang?'<span class="badge badge-new">New</span>':
       days>=60?`<span class="badge badge-overdue">Due — ${days}d ago</span>`:
@@ -497,170 +611,115 @@ function removeSinger(id){
 }
 
 // ── CSV IMPORT ────────────────────────────────────────────────────────────────
-function openImport(){
-  csvHeaders=[];csvRows=[];csvMapping={};
-  renderImportStep1();
-  $('import-modal').classList.add('open');
-}
+function openImport(){csvHeaders=[];csvRows=[];csvMapping={};renderImportStep1();$('import-modal').classList.add('open');}
 function closeImport(){$('import-modal').classList.remove('open');}
-
 function renderImportStep1(){
   $('import-modal-inner').innerHTML=`
-    <div class="modal-title">⬆ Import singers from CSV</div>
+    <div class="modal-title">⬆ Import from CSV</div>
     <div class="step-indicator">
-      <div class="step-dot active">1 Upload</div>
-      <div class="step-dot">2 Map columns</div>
-      <div class="step-dot">3 Preview &amp; import</div>
+      <div class="step-dot active">1 Upload</div><div class="step-dot">2 Map columns</div><div class="step-dot">3 Preview &amp; import</div>
     </div>
-    <div class="info-box">
-      <strong>How to export from Excel / Google Sheets:</strong><br>
-      In Excel: <em>File → Save As → CSV (Comma delimited)</em><br>
-      In Google Sheets: <em>File → Download → Comma-separated values (.csv)</em>
-    </div>
+    <div class="info-box"><strong>How to export from your spreadsheet:</strong><br>
+    Google Sheets: <em>File → Download → Comma-separated values (.csv)</em><br>
+    Excel: <em>File → Save As → CSV (Comma delimited)</em></div>
     <div class="drop-zone" id="drop-zone" onclick="$('csv-file-input').click()" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event)">
       <input type="file" id="csv-file-input" accept=".csv,.txt" onchange="handleFileSelect(event)" />
-      <div class="drop-zone-icon">📂</div>
-      <div class="drop-zone-label">Click to choose your CSV file</div>
-      <div class="drop-zone-hint">or drag and drop it here</div>
+      <div style="font-size:32px;margin-bottom:8px;">📂</div>
+      <div style="font-size:14px;font-weight:500;color:var(--text2);">Click to choose your CSV file</div>
+      <div style="font-size:12px;color:var(--text3);margin-top:4px;">or drag and drop it here</div>
     </div>
     <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:1rem;">
       <button class="btn" onclick="closeImport()">Cancel</button>
     </div>
   `;
 }
-
 function handleDragOver(e){e.preventDefault();$('drop-zone').classList.add('over');}
-function handleDragLeave(e){$('drop-zone').classList.remove('over');}
+function handleDragLeave(){$('drop-zone').classList.remove('over');}
 function handleDrop(e){e.preventDefault();$('drop-zone').classList.remove('over');const f=e.dataTransfer.files[0];if(f)readCSVFile(f);}
 function handleFileSelect(e){const f=e.target.files[0];if(f)readCSVFile(f);}
-
 function readCSVFile(file){
   const reader=new FileReader();
   reader.onload=e=>{
     try{
-      const text=e.target.result;
-      const parsed=parseCSV(text);
-      if(parsed.length<2){toast('CSV appears empty or has only headers');return;}
-      csvHeaders=parsed[0];
-      csvRows=parsed.slice(1).filter(r=>r.some(c=>c.trim())); // skip blank rows
-      autoMapColumns();
-      renderImportStep2();
+      const parsed=parseCSV(e.target.result);
+      if(parsed.length<2){toast('CSV appears empty');return;}
+      csvHeaders=parsed[0];csvRows=parsed.slice(1).filter(r=>r.some(c=>c.trim()));
+      autoMapColumns();renderImportStep2();
     }catch(err){toast('Could not read CSV: '+err.message);}
   };
   reader.readAsText(file);
 }
-
-// Simple but robust CSV parser (handles quoted fields with commas/newlines)
 function parseCSV(text){
   const rows=[];let row=[],field='',inQuote=false;
   for(let i=0;i<text.length;i++){
     const ch=text[i],next=text[i+1];
-    if(inQuote){
-      if(ch==='"'&&next==='"'){field+='"';i++;}
-      else if(ch==='"'){inQuote=false;}
-      else{field+=ch;}
-    } else {
-      if(ch==='"'){inQuote=true;}
-      else if(ch===','){row.push(field.trim());field='';}
-      else if(ch==='\r'&&next==='\n'){row.push(field.trim());rows.push(row);row=[];field='';i++;}
-      else if(ch==='\n'||ch==='\r'){row.push(field.trim());rows.push(row);row=[];field='';}
-      else{field+=ch;}
-    }
+    if(inQuote){if(ch==='"'&&next==='"'){field+='"';i++;}else if(ch==='"'){inQuote=false;}else{field+=ch;}}
+    else{if(ch==='"'){inQuote=true;}else if(ch===','){row.push(field.trim());field='';}
+    else if(ch==='\r'&&next==='\n'){row.push(field.trim());rows.push(row);row=[];field='';i++;}
+    else if(ch==='\n'||ch==='\r'){row.push(field.trim());rows.push(row);row=[];field='';}
+    else{field+=ch;}}
   }
-  if(field||row.length)row.push(field.trim());
-  if(row.length)rows.push(row);
-  return rows;
+  if(field||row.length)row.push(field.trim());if(row.length)rows.push(row);return rows;
 }
-
-// Auto-guess column mappings by header name
 function autoMapColumns(){
   csvMapping={};
   csvHeaders.forEach((h,i)=>{
     const l=h.toLowerCase().replace(/[^a-z0-9]/g,' ').trim();
-    if(l.includes('name')&&!l.includes('bhajan'))   csvMapping[i]='name';
-    else if(l.includes('last')||l.includes('date')||l.includes('sang')) csvMapping[i]='lastSang';
-    else if(l.includes('note')||l.includes('comment')||l.includes('remark')) csvMapping[i]='notes';
+    if(l.includes('name')&&!l.includes('bhajan'))csvMapping[i]='name';
+    else if(l.includes('last')||l.includes('date')||l.includes('sang'))csvMapping[i]='lastSang';
+    else if(l.includes('note')||l.includes('comment')||l.includes('remark'))csvMapping[i]='notes';
     else csvMapping[i]='_ignore';
   });
-  // make sure 'name' is mapped — if not, map first column
-  if(!Object.values(csvMapping).includes('name')&&csvHeaders.length>0) csvMapping[0]='name';
+  if(!Object.values(csvMapping).includes('name')&&csvHeaders.length>0)csvMapping[0]='name';
 }
-
 function renderImportStep2(){
-  const previewRows=csvRows.slice(0,4);
+  const previewRows=csvRows.slice(0,3);
   $('import-modal-inner').innerHTML=`
-    <div class="modal-title">⬆ Import singers from CSV</div>
+    <div class="modal-title">⬆ Import from CSV</div>
     <div class="step-indicator">
-      <div class="step-dot done">1 Upload</div>
-      <div class="step-dot active">2 Map columns</div>
-      <div class="step-dot">3 Preview &amp; import</div>
+      <div class="step-dot done">1 Upload</div><div class="step-dot active">2 Map columns</div><div class="step-dot">3 Preview &amp; import</div>
     </div>
-    <p style="font-size:13px;color:var(--text2);margin-bottom:1rem;">Found <strong>${csvHeaders.length} columns</strong> and <strong>${csvRows.length} rows</strong>. Tell the app what each column contains:</p>
+    <p style="font-size:13px;color:var(--text2);margin-bottom:1rem;">Found <strong>${csvHeaders.length} columns</strong> and <strong>${csvRows.length} rows</strong>. Check the mappings below:</p>
     <table class="map-table">
       <thead><tr><th>Your column</th><th>Sample data</th><th>Maps to</th></tr></thead>
       <tbody>
-        ${csvHeaders.map((h,i)=>`
-          <tr>
-            <td><strong>${esc(h)}</strong></td>
-            <td style="color:var(--text2);font-size:12px;">${esc(previewRows.map(r=>r[i]||'').filter(Boolean).slice(0,2).join(', '))}</td>
-            <td>
-              <select onchange="csvMapping[${i}]=this.value">
-                ${APP_FIELDS.map(f=>`<option value="${f.key}" ${csvMapping[i]===f.key?'selected':''}>${f.label}${f.required?' *':''}</option>`).join('')}
-              </select>
-            </td>
-          </tr>
-        `).join('')}
+        ${csvHeaders.map((h,i)=>`<tr>
+          <td><strong>${esc(h)}</strong></td>
+          <td style="color:var(--text2);font-size:12px;">${esc(previewRows.map(r=>r[i]||'').filter(Boolean).slice(0,2).join(', '))}</td>
+          <td><select onchange="csvMapping[${i}]=this.value">${APP_FIELDS.map(f=>`<option value="${f.key}" ${csvMapping[i]===f.key?'selected':''}>${f.label}</option>`).join('')}</select></td>
+        </tr>`).join('')}
       </tbody>
     </table>
-    <div class="warn-box" style="margin-bottom:0;">⚠️ Make sure <strong>Singer name</strong> is mapped to at least one column. Other columns are optional.</div>
     <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:1rem;">
       <button class="btn" onclick="renderImportStep1()">← Back</button>
       <button class="btn btn-primary" onclick="renderImportStep3()">Preview →</button>
     </div>
   `;
 }
-
 function renderImportStep3(){
-  // Validate: name column must be mapped
   const nameIdx=Object.entries(csvMapping).find(([_,v])=>v==='name')?.[0];
   if(nameIdx===undefined){toast('Please map a column to "Singer name"');return;}
-
-  // Parse rows into singer objects
   const imported=[];
-  const skipped=[];
-  csvRows.forEach((row,ri)=>{
+  csvRows.forEach(row=>{
     const obj={name:'',lastSang:null,notes:'',tags:[]};
     Object.entries(csvMapping).forEach(([i,field])=>{
-      if(field==='_ignore')return;
-      const val=(row[i]||'').trim();
-      if(!val)return;
-      if(field==='name')obj.name=val;
-      else if(field==='lastSang')obj.lastSang=parseFlexDate(val);
-      else if(field==='notes')obj.notes=val;
+      if(field==='_ignore')return;const val=(row[i]||'').trim();if(!val)return;
+      if(field==='name')obj.name=val;else if(field==='lastSang')obj.lastSang=parseFlexDate(val);else if(field==='notes')obj.notes=val;
     });
-    if(obj.name) imported.push(obj);
-    else skipped.push(ri+2); // row number (1-indexed + header)
+    if(obj.name)imported.push(obj);
   });
-
   $('import-modal-inner').innerHTML=`
-    <div class="modal-title">⬆ Import singers from CSV</div>
+    <div class="modal-title">⬆ Import from CSV</div>
     <div class="step-indicator">
-      <div class="step-dot done">1 Upload</div>
-      <div class="step-dot done">2 Map columns</div>
-      <div class="step-dot active">3 Preview &amp; import</div>
+      <div class="step-dot done">1 Upload</div><div class="step-dot done">2 Map columns</div><div class="step-dot active">3 Preview &amp; import</div>
     </div>
-    ${imported.length===0?`<div class="warn-box">No valid rows found. Please go back and check your column mapping.</div>`:`
-    <div class="green-box">✓ Ready to import <strong>${imported.length} singers</strong>${skipped.length?` (${skipped.length} rows skipped — no name)`:''}</div>
-    <p style="font-size:13px;color:var(--text2);margin-bottom:10px;">Preview (first 5):</p>
+    ${imported.length===0?`<div class="warn-box">No valid rows found. Go back and check your column mapping.</div>`:`
+    <div class="green-box">✓ Ready to import <strong>${imported.length} singers</strong></div>
     <div style="overflow-x:auto;margin-bottom:1rem;">
       <table class="preview-table">
         <thead><tr><th>Name</th><th>Last sang</th><th>Notes</th></tr></thead>
         <tbody>
-          ${imported.slice(0,5).map(s=>`<tr>
-            <td>${esc(s.name)}</td>
-            <td>${s.lastSang?fmtDate(s.lastSang):'—'}</td>
-            <td>${esc(s.notes||'—')}</td>
-          </tr>`).join('')}
+          ${imported.slice(0,5).map(s=>`<tr><td>${esc(s.name)}</td><td>${s.lastSang?fmtDate(s.lastSang):'—'}</td><td>${esc(s.notes||'—')}</td></tr>`).join('')}
           ${imported.length>5?`<tr><td colspan="3" style="color:var(--text3);font-style:italic;">… and ${imported.length-5} more</td></tr>`:''}
         </tbody>
       </table>
@@ -675,46 +734,27 @@ function renderImportStep3(){
     `}
     <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:1rem;">
       <button class="btn" onclick="renderImportStep2()">← Back</button>
-      ${imported.length>0?`<button class="btn btn-primary" onclick="doImport(${JSON.stringify(imported).replace(/"/g,'&quot;')})">⬆ Import ${imported.length} singers</button>`:''}
+      ${imported.length>0?`<button class="btn btn-primary" onclick='doImport(${JSON.stringify(imported)})'>⬆ Import ${imported.length} singers</button>`:''}
     </div>
   `;
 }
-
 function doImport(imported){
-  const mode=$('import-mode').value;
-  if(mode==='replace'){
-    if(!confirm(`This will DELETE all ${state.singers.length} existing singers and replace with the ${imported.length} imported ones. Are you sure?`))return;
-    state.singers=[];state.nextId=1;
-  }
+  const mode=($('import-mode')||{}).value||'merge';
+  if(mode==='replace'){if(!confirm(`Delete all ${state.singers.length} existing singers and replace? Are you sure?`))return;state.singers=[];state.nextId=1;}
   let added=0,skipped=0;
   imported.forEach(imp=>{
-    // skip if name already exists (case-insensitive) in merge mode
     if(mode==='merge'&&state.singers.some(s=>s.name.toLowerCase()===imp.name.toLowerCase())){skipped++;return;}
-    state.singers.push({id:state.nextId++,name:imp.name,lastSang:imp.lastSang,tags:imp.tags||[],notes:imp.notes||''});
-    added++;
+    state.singers.push({id:state.nextId++,name:imp.name,lastSang:imp.lastSang,tags:[],notes:imp.notes||''});added++;
   });
-  saveToGitHub(`Import ${added} singers from CSV`);
-  closeImport();renderRoster();
+  saveToGitHub(`Import ${added} singers from CSV`);closeImport();renderRoster();
   toast(`✓ Imported ${added} singers${skipped?`, skipped ${skipped} duplicates`:''}`);
 }
-
-// Flexible date parser — handles dd/mm/yyyy, mm/dd/yyyy, dd-mm-yyyy, yyyy-mm-dd, "15 Jan 2024", etc.
 function parseFlexDate(str){
-  if(!str||!str.trim())return null;
-  const s=str.trim();
-  // Already ISO
+  if(!str||!str.trim())return null;const s=str.trim();
   if(/^\d{4}-\d{2}-\d{2}$/.test(s))return s;
-  // dd/mm/yyyy or d/m/yyyy (Australian / common format)
   const dmy=/^(\d{1,2})[\/\-\.](\d{1,2})[\/\-\.](\d{4})$/.exec(s);
-  if(dmy){
-    const[,d,m,y]=dmy;
-    const date=new Date(`${y}-${m.padStart(2,'0')}-${d.padStart(2,'0')}`);
-    if(!isNaN(date))return date.toISOString().split('T')[0];
-  }
-  // Try native Date parse as fallback
-  const parsed=new Date(s);
-  if(!isNaN(parsed))return parsed.toISOString().split('T')[0];
-  return null;
+  if(dmy){const[,d,m,y]=dmy;const date=new Date(`${y}-${m.padStart(2,'0')}-${d.padStart(2,'0')}`);if(!isNaN(date))return date.toISOString().split('T')[0];}
+  const parsed=new Date(s);if(!isNaN(parsed))return parsed.toISOString().split('T')[0];return null;
 }
 
 // ── SESSION ───────────────────────────────────────────────────────────────────
@@ -745,54 +785,38 @@ function renderProgrammeTable(){
   const entries=state.session.entries;
   if(!entries.length){wrap.innerHTML='<div class="empty">No singers added to this session yet.</div>';return;}
   wrap.innerHTML=`<div class="prog-wrap"><table class="prog-table">
-    <thead><tr>
-      <th class="col-num">#</th><th class="col-singer">Singer</th><th class="col-bhajan">Bhajan</th>
-      <th class="col-links">Links &amp; Lyrics</th><th class="col-actions"></th>
-    </tr></thead>
+    <thead><tr><th style="width:32px;">#</th><th style="min-width:120px;">Singer</th><th style="min-width:130px;">Bhajan</th><th style="min-width:180px;">Links &amp; Lyrics</th><th style="width:70px;text-align:right;"></th></tr></thead>
     <tbody>
     ${entries.map((e,i)=>{
       const s=state.singers.find(x=>x.id===e.singerId);
-      const saiPill=e.link
-        ?`<a href="${esc(e.link)}" target="_blank" class="pill pill-blue">🎵 Sai Rhythms ↗</a>`
-        :`<a href="${SAI_BASE+encodeURIComponent(e.bhajan||'')}" target="_blank" class="pill pill-blue" style="opacity:.65;">🔍 Search Sai Rhythms</a>`;
-      const lyrPill=e.lyrics
-        ?`<button class="pill pill-green" onclick="toggleLyrics(${i})" id="lbtn-${i}">📄 Show lyrics</button>`
-        :`<button class="pill pill-amber" onclick="openBhajanModal(${i})" id="lbtn-${i}">+ Add lyrics</button>`;
+      const saiPill=e.link?`<a href="${esc(e.link)}" target="_blank" class="pill pill-blue">🎵 Sai Rhythms ↗</a>`:`<a href="${SAI_BASE+encodeURIComponent(e.bhajan||'')}" target="_blank" class="pill pill-blue" style="opacity:.65;">🔍 Search Sai Rhythms</a>`;
+      const lyrPill=e.lyrics?`<button class="pill pill-green" onclick="toggleLyrics(${i})" id="lbtn-${i}">📄 Show lyrics</button>`:`<button class="pill pill-amber" onclick="openBhajanModal(${i})" id="lbtn-${i}">+ Add lyrics</button>`;
       const lyrBlock=e.lyrics?`<div class="lyrics-block" id="lyrics-${i}" style="display:none;">${esc(e.lyrics)}</div>`:`<div id="lyrics-${i}"></div>`;
       return`<tr>
-        <td class="col-num"><span class="prog-num">${i+1}</span></td>
-        <td class="col-singer">
-          <div class="prog-name">${esc(e.singerName)}</div>
-          ${s?`<div class="tags-row" style="margin-top:4px;">${tagHtml(s.tags,true)}</div>`:''}
-        </td>
-        <td class="col-bhajan"><span class="prog-bhajan-text">${esc(e.bhajan||'—')}</span></td>
-        <td class="col-links"><div class="prog-links-wrap">${saiPill}${lyrPill}</div>${lyrBlock}</td>
-        <td class="col-actions">
-          <button class="btn btn-xs" onclick="openBhajanModal(${i})" title="Edit">✏️</button>
-          <button class="btn btn-xs btn-danger" onclick="removeFromSession(${i})" title="Remove">✕</button>
+        <td><span class="prog-num">${i+1}</span></td>
+        <td><div class="prog-name">${esc(e.singerName)}</div>${s?`<div class="tags-row" style="margin-top:4px;">${tagHtml(s.tags,true)}</div>`:''}</td>
+        <td><span style="font-size:13px;">${esc(e.bhajan||'—')}</span></td>
+        <td><div class="prog-links-wrap">${saiPill}${lyrPill}</div>${lyrBlock}</td>
+        <td style="text-align:right;">
+          <button class="btn btn-xs" onclick="openBhajanModal(${i})">✏️</button>
+          <button class="btn btn-xs btn-danger" onclick="removeFromSession(${i})">✕</button>
         </td>
       </tr>`;
     }).join('')}
     </tbody>
   </table></div>`;
 }
-function toggleLyrics(i){
-  const block=$(`lyrics-${i}`),btn=$(`lbtn-${i}`);if(!block||!btn)return;
-  const shown=block.style.display==='block';block.style.display=shown?'none':'block';
-  btn.textContent=shown?'📄 Show lyrics':'📄 Hide lyrics';
-}
+function toggleLyrics(i){const block=$(`lyrics-${i}`),btn=$(`lbtn-${i}`);if(!block||!btn)return;const shown=block.style.display==='block';block.style.display=shown?'none':'block';btn.textContent=shown?'📄 Show lyrics':'📄 Hide lyrics';}
 function updateSaiSearch(){const btn=$('bm-search-btn');if(btn)btn.href=SAI_BASE+encodeURIComponent(($('bm-bhajan').value||'').trim());}
 function openBhajanModal(idx){
   editEntryIdx=idx;const e=state.session.entries[idx];
   $('bhajan-modal-title').textContent=`Bhajan details — ${esc(e.singerName)}`;
   $('bm-bhajan').value=e.bhajan||'';$('bm-link').value=e.link||'';$('bm-lyrics').value=e.lyrics||'';
-  $('bm-search-btn').href=SAI_BASE+encodeURIComponent(e.bhajan||'');
-  $('bhajan-modal').classList.add('open');
+  $('bm-search-btn').href=SAI_BASE+encodeURIComponent(e.bhajan||'');$('bhajan-modal').classList.add('open');
 }
 function closeBhajanModal(){$('bhajan-modal').classList.remove('open');editEntryIdx=null;}
 function saveBhajan(){
-  if(editEntryIdx===null)return;
-  const e=state.session.entries[editEntryIdx];
+  if(editEntryIdx===null)return;const e=state.session.entries[editEntryIdx];
   e.bhajan=($('bm-bhajan').value||'').trim();e.link=($('bm-link').value||'').trim();e.lyrics=($('bm-lyrics').value||'').trim();
   scheduleSave('Update bhajan details');closeBhajanModal();renderProgrammeTable();toast('Bhajan details saved ✓');
 }
@@ -835,7 +859,7 @@ function copyWA(){
   navigator.clipboard.writeText(msg).then(()=>toast('Copied! 📋')).catch(()=>{const ta=document.createElement('textarea');ta.value=msg;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);toast('Copied! 📋');});
 }
 
-// ── MODAL CLOSE ON BG ─────────────────────────────────────────────────────────
+// ── MODAL CLOSE ───────────────────────────────────────────────────────────────
 $('singer-modal').addEventListener('click',e=>{if(e.target===$('singer-modal'))closeSingerModal();});
 $('bhajan-modal').addEventListener('click',e=>{if(e.target===$('bhajan-modal'))closeBhajanModal();});
 $('import-modal').addEventListener('click',e=>{if(e.target===$('import-modal'))closeImport();});
@@ -843,7 +867,12 @@ $('import-modal').addEventListener('click',e=>{if(e.target===$('import-modal'))c
 // ── BOOT ──────────────────────────────────────────────────────────────────────
 (async function boot(){
   cfg=loadCfg();
-  if(!cfg){renderSetup();return;}
+  if(!cfg){
+    // Show join screen — if BHAJAN_OWNER is set we're deployed, otherwise show full join form
+    if(window.BHAJAN_OWNER) renderJoin('');
+    else renderJoinFull('');
+    return;
+  }
   if(loadLocal())renderApp();
   const ok=await loadFromGitHub();
   if(ok){if(currentTab==='roster')renderRoster();if(currentTab==='session')renderSession();if(currentTab==='whatsapp')refreshWA();}
