@@ -656,6 +656,13 @@
         "lyrics": ""
       },
       {
+        "singerId": 25,
+        "singerName": "Yuke",
+        "bhajan": "",
+        "link": "",
+        "lyrics": ""
+      },
+      {
         "singerId": 42,
         "singerName": "Dheavini",
         "bhajan": "",
@@ -665,13 +672,6 @@
       {
         "singerId": 31,
         "singerName": "Ghajan",
-        "bhajan": "",
-        "link": "",
-        "lyrics": ""
-      },
-      {
-        "singerId": 25,
-        "singerName": "Yuke",
         "bhajan": "",
         "link": "",
         "lyrics": ""
