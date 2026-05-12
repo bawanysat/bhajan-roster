@@ -680,7 +680,14 @@
       "instrument": "Guitar",
       "notes": "",
       "availability": "available"
+    },
+    {
+      "id": 2,
+      "name": "Sathyam",
+      "instrument": "Harmonium",
+      "notes": "",
+      "availability": "available"
     }
   ],
-  "nextInstId": 2
+  "nextInstId": 3
 }
