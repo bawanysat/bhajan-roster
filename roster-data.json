@@ -656,17 +656,17 @@
         "lyrics": ""
       },
       {
-        "singerId": 37,
-        "singerName": "Sathyam",
-        "bhajan": "",
-        "link": "",
-        "lyrics": ""
-      },
-      {
         "singerId": 3,
         "singerName": "Praneil Raniga",
         "bhajan": "om namah shivaya shivaya namah om",
         "link": "https://sairhythms.sathyasai.org/song/om-namah-shivaya-shivaya-namah-0",
+        "lyrics": ""
+      },
+      {
+        "singerId": 37,
+        "singerName": "Sathyam",
+        "bhajan": "",
+        "link": "",
         "lyrics": ""
       }
     ]
