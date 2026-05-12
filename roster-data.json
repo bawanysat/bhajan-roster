@@ -661,9 +661,18 @@
         "bhajan": "",
         "link": "",
         "lyrics": ""
+      },
+      {
+        "singerId": 37,
+        "singerName": "Sathyam",
+        "bhajan": "",
+        "link": "",
+        "lyrics": ""
       }
     ]
   },
   "groupName": "Woollongabba Sai Bhajan Roster",
-  "nextId": 90
+  "nextId": 90,
+  "instrumentalists": [],
+  "nextInstId": 1
 }
