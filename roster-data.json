@@ -45,21 +45,21 @@
     {
       "id": 6,
       "name": "Aunty Hansa",
-      "lastSang": "2024-03-08",
+      "lastSang": "2026-05-14",
       "tags": [],
       "notes": "Will let us know when available"
     },
     {
       "id": 7,
       "name": "Bhavik",
-      "lastSang": "2024-03-08",
+      "lastSang": "2026-05-14",
       "tags": [],
       "notes": "Will let us know when available"
     },
     {
       "id": 8,
       "name": "Sabrina",
-      "lastSang": "2024-03-08",
+      "lastSang": "2026-05-14",
       "tags": [],
       "notes": ""
     },
@@ -646,7 +646,7 @@
     }
   ],
   "session": {
-    "date": "2026-05-14",
+    "date": "2026-05-12",
     "entries": [
       {
         "singerId": 6,
@@ -724,5 +724,30 @@
       "availability": "available"
     }
   ],
-  "nextInstId": 8
+  "nextInstId": 8,
+  "calendar": {
+    "2026-05-14": [
+      {
+        "singerId": 6,
+        "singerName": "Aunty Hansa",
+        "bhajan": "",
+        "link": "",
+        "lyrics": ""
+      },
+      {
+        "singerId": 7,
+        "singerName": "Bhavik",
+        "bhajan": "",
+        "link": "",
+        "lyrics": ""
+      },
+      {
+        "singerId": 8,
+        "singerName": "Sabrina",
+        "bhajan": "",
+        "link": "",
+        "lyrics": ""
+      }
+    ]
+  }
 }
