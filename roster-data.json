@@ -708,9 +708,16 @@
       "instrument": "Harmonium",
       "notes": "",
       "availability": "available"
+    },
+    {
+      "id": 7,
+      "name": "Prasath",
+      "instrument": "Tabla",
+      "notes": "",
+      "availability": "available"
     }
   ],
-  "nextInstId": 7,
+  "nextInstId": 8,
   "calendar": {
     "2026-05-14": [
       {
