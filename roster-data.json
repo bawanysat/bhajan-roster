@@ -22,7 +22,7 @@
     {
       "id": 3,
       "name": "Praneil Raniga",
-      "lastSang": "2026-05-14",
+      "lastSang": "2026-05-12",
       "tags": [
         "regular"
       ],
@@ -299,7 +299,7 @@
     {
       "id": 42,
       "name": "Dheavini",
-      "lastSang": "2026-05-14",
+      "lastSang": "2026-05-12",
       "tags": [],
       "notes": ""
     },
@@ -720,6 +720,22 @@
   "nextInstId": 8,
   "calendar": {
     "2026-05-14": [
+      {
+        "singerId": 42,
+        "singerName": "Dheavini",
+        "bhajan": "",
+        "link": "",
+        "lyrics": ""
+      },
+      {
+        "singerId": 3,
+        "singerName": "Praneil Raniga",
+        "bhajan": "",
+        "link": "",
+        "lyrics": ""
+      }
+    ],
+    "2026-05-12": [
       {
         "singerId": 42,
         "singerName": "Dheavini",
