@@ -687,7 +687,14 @@
       "instrument": "Harmonium",
       "notes": "",
       "availability": "available"
+    },
+    {
+      "id": 3,
+      "name": "Athavan",
+      "instrument": "Tabla",
+      "notes": "",
+      "availability": "available"
     }
   ],
-  "nextInstId": 3
+  "nextInstId": 4
 }
