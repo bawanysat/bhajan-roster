@@ -22,7 +22,7 @@
     {
       "id": 3,
       "name": "Praneil Raniga",
-      "lastSang": null,
+      "lastSang": "2026-05-12",
       "tags": [
         "regular"
       ],
@@ -178,7 +178,7 @@
     {
       "id": 25,
       "name": "Yuke",
-      "lastSang": "2026-01-15",
+      "lastSang": "2026-05-12",
       "tags": [],
       "notes": ""
     },
@@ -220,7 +220,7 @@
     {
       "id": 31,
       "name": "Ghajan",
-      "lastSang": "2026-03-12",
+      "lastSang": "2026-05-12",
       "tags": [],
       "notes": ""
     },
@@ -264,7 +264,7 @@
     {
       "id": 37,
       "name": "Sathyam",
-      "lastSang": "2026-03-19",
+      "lastSang": "2026-05-12",
       "tags": [],
       "notes": ""
     },
@@ -299,7 +299,7 @@
     {
       "id": 42,
       "name": "Dheavini",
-      "lastSang": "2026-03-26",
+      "lastSang": "2026-05-12",
       "tags": [],
       "notes": ""
     },
@@ -646,11 +646,39 @@
     }
   ],
   "session": {
-    "date": "2026-05-14",
+    "date": "2026-05-07",
     "entries": [
+      {
+        "singerId": 25,
+        "singerName": "Yuke",
+        "bhajan": "",
+        "link": "",
+        "lyrics": ""
+      },
+      {
+        "singerId": 37,
+        "singerName": "Sathyam",
+        "bhajan": "",
+        "link": "",
+        "lyrics": ""
+      },
       {
         "singerId": 3,
         "singerName": "Praneil Raniga",
+        "bhajan": "",
+        "link": "",
+        "lyrics": ""
+      },
+      {
+        "singerId": 31,
+        "singerName": "Ghajan",
+        "bhajan": "",
+        "link": "",
+        "lyrics": ""
+      },
+      {
+        "singerId": 42,
+        "singerName": "Dheavini",
         "bhajan": "",
         "link": "",
         "lyrics": ""
@@ -658,5 +686,126 @@
     ]
   },
   "groupName": "Woollongabba Sai Bhajan Roster",
-  "nextId": 90
+  "nextId": 90,
+  "instrumentalists": [
+    {
+      "id": 1,
+      "name": "Dheiavini Naicker",
+      "instrument": "Guitar",
+      "notes": "",
+      "availability": "available"
+    },
+    {
+      "id": 2,
+      "name": "Sathyam",
+      "instrument": "Harmonium",
+      "notes": "",
+      "availability": "available"
+    },
+    {
+      "id": 3,
+      "name": "Athavan",
+      "instrument": "Tabla",
+      "notes": "",
+      "availability": "available"
+    },
+    {
+      "id": 4,
+      "name": "Saiyuri",
+      "instrument": "Guitar",
+      "notes": "",
+      "availability": "available"
+    },
+    {
+      "id": 5,
+      "name": "Rupini Vivek",
+      "instrument": "Harmonium",
+      "notes": "",
+      "availability": "available"
+    },
+    {
+      "id": 6,
+      "name": "Yuke",
+      "instrument": "Harmonium",
+      "notes": "",
+      "availability": "available"
+    },
+    {
+      "id": 7,
+      "name": "Prasath",
+      "instrument": "Tabla",
+      "notes": "",
+      "availability": "available"
+    }
+  ],
+  "nextInstId": 8,
+  "calendar": {
+    "2026-05-14": [
+      {
+        "singerId": 25,
+        "singerName": "Yuke",
+        "bhajan": "",
+        "link": "",
+        "lyrics": ""
+      },
+      {
+        "singerId": 37,
+        "singerName": "Sathyam",
+        "bhajan": "",
+        "link": "",
+        "lyrics": ""
+      },
+      {
+        "singerId": 3,
+        "singerName": "Praneil Raniga",
+        "bhajan": "",
+        "link": "",
+        "lyrics": ""
+      },
+      {
+        "singerId": 31,
+        "singerName": "Ghajan",
+        "bhajan": "",
+        "link": "",
+        "lyrics": ""
+      }
+    ],
+    "2026-05-12": [
+      {
+        "singerId": 25,
+        "singerName": "Yuke",
+        "bhajan": "",
+        "link": "",
+        "lyrics": ""
+      },
+      {
+        "singerId": 37,
+        "singerName": "Sathyam",
+        "bhajan": "",
+        "link": "",
+        "lyrics": ""
+      },
+      {
+        "singerId": 3,
+        "singerName": "Praneil Raniga",
+        "bhajan": "",
+        "link": "",
+        "lyrics": ""
+      },
+      {
+        "singerId": 31,
+        "singerName": "Ghajan",
+        "bhajan": "",
+        "link": "",
+        "lyrics": ""
+      },
+      {
+        "singerId": 42,
+        "singerName": "Dheavini",
+        "bhajan": "",
+        "link": "",
+        "lyrics": ""
+      }
+    ]
+  }
 }
