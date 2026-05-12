@@ -694,7 +694,14 @@
       "instrument": "Tabla",
       "notes": "",
       "availability": "available"
+    },
+    {
+      "id": 4,
+      "name": "Saiyuri",
+      "instrument": "Guitar",
+      "notes": "",
+      "availability": "available"
     }
   ],
-  "nextInstId": 4
+  "nextInstId": 5
 }
