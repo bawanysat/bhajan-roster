@@ -694,9 +694,16 @@
       "instrument": "Guitar",
       "notes": "",
       "availability": "available"
+    },
+    {
+      "id": 5,
+      "name": "Rupini Vivek",
+      "instrument": "Harmonium",
+      "notes": "",
+      "availability": "available"
     }
   ],
-  "nextInstId": 5,
+  "nextInstId": 6,
   "calendar": {
     "2026-05-14": [
       {
