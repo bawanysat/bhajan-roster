@@ -703,36 +703,5 @@
     }
   ],
   "nextInstId": 8,
-  "calendar": {
-    "2026-05-15": [
-      {
-        "singerId": 42,
-        "singerName": "Dheavini",
-        "bhajan": "",
-        "link": "",
-        "lyrics": ""
-      },
-      {
-        "singerId": 37,
-        "singerName": "Sathyam",
-        "bhajan": "",
-        "link": "",
-        "lyrics": ""
-      },
-      {
-        "singerId": 3,
-        "singerName": "Praneil Raniga",
-        "bhajan": "",
-        "link": "",
-        "lyrics": ""
-      },
-      {
-        "singerId": 31,
-        "singerName": "Ghajan",
-        "bhajan": "",
-        "link": "",
-        "lyrics": ""
-      }
-    ]
-  }
+  "calendar": {}
 }
