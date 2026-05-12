@@ -673,6 +673,14 @@
   },
   "groupName": "Woollongabba Sai Bhajan Roster",
   "nextId": 90,
-  "instrumentalists": [],
-  "nextInstId": 1
+  "instrumentalists": [
+    {
+      "id": 1,
+      "name": "Dheiavini Naicker",
+      "instrument": "Guitar",
+      "notes": "",
+      "availability": "available"
+    }
+  ],
+  "nextInstId": 2
 }
