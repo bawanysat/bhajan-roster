@@ -646,7 +646,7 @@
     }
   ],
   "session": {
-    "date": "2026-05-14",
+    "date": "2026-05-12",
     "entries": [
       {
         "singerId": 3,
@@ -697,5 +697,22 @@
     }
   ],
   "nextInstId": 5,
-  "calendar": {}
+  "calendar": {
+    "2026-05-14": [
+      {
+        "singerId": 3,
+        "singerName": "Praneil Raniga",
+        "bhajan": "",
+        "link": "https://sairhythms.sathyasai.org/song/om-namah-shivaya-shivaya-namah-0",
+        "lyrics": ""
+      },
+      {
+        "singerId": 31,
+        "singerName": "Ghajan",
+        "bhajan": "",
+        "link": "",
+        "lyrics": ""
+      }
+    ]
+  }
 }
