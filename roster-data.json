@@ -646,7 +646,7 @@
     }
   ],
   "session": {
-    "date": "2026-05-12",
+    "date": "2026-05-14",
     "entries": [
       {
         "singerId": 3,
@@ -658,6 +658,13 @@
       {
         "singerId": 31,
         "singerName": "Ghajan",
+        "bhajan": "",
+        "link": "",
+        "lyrics": ""
+      },
+      {
+        "singerId": 25,
+        "singerName": "Yuke",
         "bhajan": "",
         "link": "",
         "lyrics": ""
