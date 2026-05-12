@@ -647,7 +647,15 @@
   ],
   "session": {
     "date": "2026-05-14",
-    "entries": []
+    "entries": [
+      {
+        "singerId": 42,
+        "singerName": "Dheavini",
+        "bhajan": "",
+        "link": "",
+        "lyrics": ""
+      }
+    ]
   },
   "groupName": "Woollongabba Sai Bhajan Roster",
   "nextId": 90,
