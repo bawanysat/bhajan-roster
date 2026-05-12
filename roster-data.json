@@ -646,37 +646,8 @@
     }
   ],
   "session": {
-    "date": "2026-05-12",
-    "entries": [
-      {
-        "singerId": 42,
-        "singerName": "Dheavini",
-        "bhajan": "",
-        "link": "",
-        "lyrics": ""
-      },
-      {
-        "singerId": 37,
-        "singerName": "Sathyam",
-        "bhajan": "",
-        "link": "",
-        "lyrics": ""
-      },
-      {
-        "singerId": 3,
-        "singerName": "Praneil Raniga",
-        "bhajan": "",
-        "link": "",
-        "lyrics": ""
-      },
-      {
-        "singerId": 31,
-        "singerName": "Ghajan",
-        "bhajan": "",
-        "link": "",
-        "lyrics": ""
-      }
-    ]
+    "date": "2026-05-14",
+    "entries": []
   },
   "groupName": "Woollongabba Sai Bhajan Roster",
   "nextId": 90,
