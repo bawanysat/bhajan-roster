@@ -701,9 +701,16 @@
       "instrument": "Harmonium",
       "notes": "",
       "availability": "available"
+    },
+    {
+      "id": 6,
+      "name": "Yuke",
+      "instrument": "Harmonium",
+      "notes": "",
+      "availability": "available"
     }
   ],
-  "nextInstId": 6,
+  "nextInstId": 7,
   "calendar": {
     "2026-05-14": [
       {
