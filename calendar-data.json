@@ -2,6 +2,13 @@
   "calendar": {
     "2026-05-14": [
       {
+        "singerId": 3,
+        "singerName": "Praneil Raniga",
+        "bhajan": "",
+        "link": "",
+        "lyrics": ""
+      },
+      {
         "singerId": 42,
         "singerName": "Dheavini",
         "bhajan": "",
@@ -18,13 +25,6 @@
       {
         "singerId": 25,
         "singerName": "Yuke",
-        "bhajan": "",
-        "link": "",
-        "lyrics": ""
-      },
-      {
-        "singerId": 3,
-        "singerName": "Praneil Raniga",
         "bhajan": "",
         "link": "",
         "lyrics": ""
