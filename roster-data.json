@@ -22,7 +22,7 @@
     {
       "id": 3,
       "name": "Praneil Raniga",
-      "lastSang": "2026-05-12",
+      "lastSang": "2026-05-15",
       "tags": [
         "regular"
       ],
@@ -220,7 +220,7 @@
     {
       "id": 31,
       "name": "Ghajan",
-      "lastSang": "2026-05-12",
+      "lastSang": "2026-05-15",
       "tags": [],
       "notes": ""
     },
@@ -264,7 +264,7 @@
     {
       "id": 37,
       "name": "Sathyam",
-      "lastSang": "2026-05-12",
+      "lastSang": "2026-05-15",
       "tags": [],
       "notes": ""
     },
@@ -299,7 +299,7 @@
     {
       "id": 42,
       "name": "Dheavini",
-      "lastSang": "2026-05-12",
+      "lastSang": "2026-05-15",
       "tags": [],
       "notes": ""
     },
@@ -646,7 +646,7 @@
     }
   ],
   "session": {
-    "date": "2026-05-15",
+    "date": "2026-05-12",
     "entries": [
       {
         "singerId": 42,
@@ -665,6 +665,13 @@
       {
         "singerId": 3,
         "singerName": "Praneil Raniga",
+        "bhajan": "",
+        "link": "",
+        "lyrics": ""
+      },
+      {
+        "singerId": 31,
+        "singerName": "Ghajan",
         "bhajan": "",
         "link": "",
         "lyrics": ""
@@ -724,5 +731,37 @@
       "availability": "available"
     }
   ],
-  "nextInstId": 8
+  "nextInstId": 8,
+  "calendar": {
+    "2026-05-15": [
+      {
+        "singerId": 42,
+        "singerName": "Dheavini",
+        "bhajan": "",
+        "link": "",
+        "lyrics": ""
+      },
+      {
+        "singerId": 37,
+        "singerName": "Sathyam",
+        "bhajan": "",
+        "link": "",
+        "lyrics": ""
+      },
+      {
+        "singerId": 3,
+        "singerName": "Praneil Raniga",
+        "bhajan": "",
+        "link": "",
+        "lyrics": ""
+      },
+      {
+        "singerId": 31,
+        "singerName": "Ghajan",
+        "bhajan": "",
+        "link": "",
+        "lyrics": ""
+      }
+    ]
+  }
 }
