@@ -649,13 +649,6 @@
     "date": "2026-05-12",
     "entries": [
       {
-        "singerId": 3,
-        "singerName": "Praneil Raniga",
-        "bhajan": "",
-        "link": "",
-        "lyrics": ""
-      },
-      {
         "singerId": 25,
         "singerName": "Yuke",
         "bhajan": "",
@@ -665,6 +658,13 @@
       {
         "singerId": 42,
         "singerName": "Dheavini",
+        "bhajan": "",
+        "link": "",
+        "lyrics": ""
+      },
+      {
+        "singerId": 3,
+        "singerName": "Praneil Raniga",
         "bhajan": "",
         "link": "",
         "lyrics": ""
