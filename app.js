@@ -167,8 +167,38 @@ async function loadCalendarFromGitHub() {
     }
     return true;
   } catch (e) {
-    // calendar file missing is fine; we'll create it when saving
-    return false;
+    // If authenticated API access failed (e.g. user didn't paste organiser token or token lacks access),
+    // try an anonymous fetch from raw.githubusercontent.com — useful when the repo is public.
+    try {
+      const rawUrl = `https://raw.githubusercontent.com/${cfg.owner}/${cfg.repo}/main/${window.BHAJAN_CALENDAR_FILE}`;
+      const r = await fetch(rawUrl);
+      if (!r.ok) return false;
+      const cal = await r.json();
+      // no SHA available for anonymous raw fetch
+      calendarFileSha = null;
+      state = state || defaultState();
+      state.calendar = state.calendar || {};
+      const source = (cal && cal.calendar) ? cal.calendar : cal;
+      Object.keys(source || {}).forEach(k => {
+        state.calendar[k] = state.calendar[k] || [];
+        (source[k] || []).forEach(item => {
+          if (!state.calendar[k].some(x => x.singerId === item.singerId && x.bhajan === item.bhajan)) state.calendar[k].push(item);
+        });
+      });
+      if (window._migratedCalendar) {
+        Object.keys(window._migratedCalendar).forEach(k => {
+          state.calendar[k] = state.calendar[k] || [];
+          (window._migratedCalendar[k] || []).forEach(item => {
+            if (!state.calendar[k].some(x => x.singerId === item.singerId && x.bhajan === item.bhajan)) state.calendar[k].push(item);
+          });
+        });
+        window._migratedCalendar = null;
+      }
+      return true;
+    } catch (e2) {
+      // calendar file missing or inaccessible — we'll create it when saving
+      return false;
+    }
   }
 }
 
@@ -545,6 +575,17 @@ function renderApp() {
     renderSession();
     scheduleSave('Update session date');
   });
+
+  // Immediately load any planned singers for the current session date (so users see saved lists without changing the date)
+  try {
+    const cur = $('session-date').value;
+    if (cur && state.calendar && state.calendar[cur] && state.calendar[cur].length) {
+      state.session.entries = state.calendar[cur].map(x => ({ singerId: x.singerId, singerName: x.singerName, bhajan: x.bhajan || '', link: x.link || '', lyrics: x.lyrics || '' }));
+      // Only show a toast when there are entries to avoid noisy messages on every load
+      toast(`Loaded ${state.session.entries.length} planned singer(s) for ${fmtDate(cur)}`);
+      renderSession();
+    }
+  } catch (e) { /* ignore in case DOM not ready */ }
 
   renderRoster();
   setSyncStatus('ok', 'Synced');
